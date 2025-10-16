@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HVACPremium - Climatización Eficiente</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333;}
+    header {background:#2ca02c; color:white; padding:50px 20px; text-align:center;}
+    header img {width:100px; border-radius:12px; margin-bottom:10px;}
+    header h1 {margin:0; font-size:2.8em;}
+    header p {margin:10px 0; font-size:1.3em;}
+    .button-whatsapp {display:inline-block; margin-top:20px; padding:15px 25px; background:#25D366; color:white; font-weight:bold; border-radius:5px; text-decoration:none; font-size:1.2em;}
+    section {padding:60px 20px; max-width:1100px; margin:0 auto;}
+    h2 {color:#2ca02c; margin-bottom:30px; text-align:center;}
+    .services, .advantages, .new-products {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px;}
+    .card {background:white; padding:20px; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.1); text-align:center;}
+    .card img {max-width:100%; border-radius:10px; margin-bottom:15px;}
+    footer {background:#2ca02c; color:white; text-align:center; padding:20px;}
+    input, textarea {width:100%; padding:12px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;}
+    button {background:#2ca02c; color:white; padding:15px 25px; border:none; border-radius:5px; font-size:1.1em; cursor:pointer;}
+    button:hover {background:#239a23;}
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="img/logo.png" alt="HVACPremium logo">
+  <h1>HVACPremium</h1>
+  <p>Instalación · Mantenimiento · Reparación · Desinstalación · Utilización</p>
+  <a href="https://wa.me/34643867992" class="button-whatsapp">CONTACTO: +34 643 867 992</a>
+</header>
+
+<section>
+  <h2>Nuestros Servicios</h2>
+  <div class="services">
+    <div class="card">
+      <img src="img/aire_acondicionado.jpg" alt="Aire Acondicionado">
+      <h3>Aire Acondicionado</h3>
+      <p>Instalación de sistemas split, multisplit y por conductos. Mantenimiento.</p>
+    </div>
+    <div class="card">
+      <img src="img/aerotermia.jpg" alt="Aerotermia">
+      <h3>Aerotermia</h3>
+      <p>Tecnología de climatización para calefacción, refrigeración y agua caliente, con máximo ahorro energético.</p>
+    </div>
+    <div class="card">
+      <img src="img/acs.jpg" alt="ACS - Agua Caliente Sanitaria">
+      <h3>ACS (Agua Caliente Sanitaria)</h3>
+      <p>Producción eficiente de agua caliente con sistemas de aerotermia y depósitos integrados.</p>
+    </div>
+    <div class="card">
+      <img src="img/calefaccion.jpg" alt="Calefacción">
+      <h3>Calefacción</h3>
+      <p>Suelo radiante, radiadores de baja temperatura bombas de calor, calderas para máximo confort.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Nueva Propuesta: Multisplit + ACS</h2>
+  <div class="new-products">
+    <div class="card">
+      <img src="img/multisplit_daikin.jpg" alt="Daikin Multisplit + ACS">
+      <h3>Daikin Multisplit + ACS</h3>
+      <p>Sistema innovador que combina aire acondicionado y agua caliente sanitaria en un solo equipo, eficiente y ecológico.</p>
+    </div>
+    <div class="card">
+      <img src="img/multisplit_haier.jpg" alt="Haier Multisplit + ACS">
+      <h3>Haier Multisplit + ACS</h3>
+      <p>Solución integral de climatización y agua caliente sanitaria, con alta eficiencia energética y tecnología avanzada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 BOTÓN PARA ABRIR POPUP -->
+<button id="openPopup">¿Tienes dudas o no sabes dónde empezar?click aqui</button>
+
+<!-- 🔹 POPUP DE SERVICIO -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close">&times;</span>
+    <h3>¿Tienes dudas o no sabes dónde empezar?</<h3>
+    <p>No estás seguro de qué equipo elegir o si se adapta a tu vivienda?<br>
+    Aprovecha nuestro servicio <strong>“Visita del especialista”</strong> para resolver todas tus dudas y elegir la mejor solución de climatización.</p>
+    <p><strong>Precio especial: 49 €</strong></p>
+      <p><strong>Barcelona y alrededores</strong></p>
+    <a href="https://wa.me/34643867992?text=Hola!%20Quiero%20solicitar%20una%20visita%20del%20especialista%20por%2049€" 
+       class="button-whatsapp">Solicitar por WhatsApp</a>
+  </div>
+</div>
+
+<section>
+  <h2>Por qué elegir HVACPremium</h2>
+  <div class="advantages">
+    <div class="card">Servicio técnico autorizado según RITE</div>
+    <div class="card">Productos de alta eficiencia energética</div>
+    <div class="card">Asesoramiento gratuito y presupuesto sin compromiso</div>
+    <div class="card">Mantenimiento integral y postventa confiable</div>
+  </div>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <p>¿Quieres mejorar el confort de tu hogar? Contáctanos ahora por WhatsApp o completa el formulario:</p>
+  <a href="https://wa.me/34643867992" class="button-whatsapp">Enviar WhatsApp</a>
+  <form action="mailto:HVACbarcelona@yahoo.com" method="post" enctype="text/plain" style="margin-top:20px;">
+    <input type="text" name="Nombre" placeholder="Nombre" required>
+    <input type="tel" name="Teléfono" placeholder="Teléfono" required>
+    <textarea name="Mensaje" placeholder="Mensaje" rows="4" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 HVACPremium - Barcelona | WhatsApp: <a href="https://wa.me/34643867992">+34 643 867 992</a></p>
+</footer>
+
+<!-- 🔹 POPUP STYLES -->
+<style>
+#openPopup {
+  background:#2ca02c; color:white; border:none; padding:15px 25px;
+  font-size:1.1em; border-radius:5px; cursor:pointer;
+  display:block; margin:40px auto; font-weight:bold;
+  transition:background 0.3s ease;
+}
+#openPopup:hover {background:#239a23;}
+.popup {
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.6); justify-content:center; align-items:center;
+  z-index:999;
+}
+.popup-content {
+  background:white; padding:35px 25px; border-radius:12px; max-width:420px;
+  text-align:center; box-shadow:0 4px 25px rgba(0,0,0,0.3);
+  position:relative; color:#333;
+}
+.popup-content h3 {color:#2ca02c; margin-bottom:15px;}
+.popup-content p {line-height:1.5;}
+.close {
+  position:absolute; top:10px; right:15px; font-size:28px; cursor:pointer; color:#333;
+}
+</style>
+
+<!-- 🔹 POPUP SCRIPT -->
+<script>
+document.getElementById('openPopup').onclick = () => document.getElementById('popup').style.display = 'flex';
+document.getElementById('closePopup').onclick = () => document.getElementById('popup').style.display = 'none';
+window.onclick = e => { if(e.target == document.getElementById('popup')) document.getElementById('popup').style.display = 'none'; }
+</script>
+
+<!-- 🔹 КРУГЛАЯ КНОПКА WHATSAPP -->
+<a href="https://wa.me/34643867992?text=Hola!%20Quiero%20más%20información%20sobre%20HVACPremium"
+   class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <img src="img/whatsapp.svg" alt="WhatsApp">
+</a>
+
+<style>
+.whatsapp-float {
+  position:fixed;
+  width:65px;
+  height:65px;
+  bottom:25px;
+  right:25px;
+  background-color:#25D366;
+  border-radius:50%;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform:scale(1.1);
+  box-shadow:0 6px 15px rgba(0,0,0,0.4);
+}
+.whatsapp-float img {
+  width:36px;
+  height:36px;
+  filter:brightness(0) invert(1);
+}
+</style>
+
+</body>
+</html>
